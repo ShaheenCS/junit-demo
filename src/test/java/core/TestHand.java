@@ -17,6 +17,10 @@ public class TestHand extends TestCase {
 		assertTrue(h.addHand(c));
 	}
 	
+	public void testFullHouse(){
+		Hand fullHouse = new Hand("3D 3H 3S 2H 2S");
+		assertTrue(fullHouse.isFullHouse());
+	}
 	
 }
 
