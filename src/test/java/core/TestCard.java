@@ -19,4 +19,10 @@ public class TestCard extends TestCase {
 		assertEquals(s, Suit.SPADES);
 	}
 	
+	public void testRank() {
+		Card c = new Card();
+		Rank r = c.makeRank("Eight");
+		assertEquals(r, Rank.EIGHT);
+	}
+	
 }
