@@ -7,8 +7,16 @@ public class TestHand extends TestCase {
 	public void testNoCards() {
   
 		Hand h = new Hand();
-		assertEquals(true, h.isFull());
+		assertEquals(false, h.isFull());
 	}
+	
+	public void testAddHand() {
+		  
+		Hand h = new Hand();
+		Card c = new Card("AS");
+		assertTrue(h.addHand(c));
+	}
+	
 	
 }
 

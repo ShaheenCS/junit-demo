@@ -1,21 +1,29 @@
 package core;
 
+import java.util.ArrayList;
+
 public class Hand {
 	
-	private Card[] card;
+	private ArrayList<Card> cards;
 	
 	public Hand(){
-		card = new Card[5];
+		cards = new ArrayList<Card>();
 	}
 	
-	public Card[] getCard(){
-		return card;
+	public ArrayList<Card> getCard(){
+		return cards;
 	}
 	
+	public boolean addHand(Card cd){
+		cards.add(cd);
+		if(isFull())
+			return true;
+		return false;
+	}
 	// false if hand is empty 
 	public boolean isFull() {
 		// empty?
-		if(card.length==0){
+		if(cards.size()==0){
 			return false;
 		}
 		// valid ID?
