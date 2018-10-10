@@ -5,6 +5,10 @@ import junit.framework.TestCase;
 /*
  * @Autor: Shaheen
  */
+
+// TODO cards from text file
+// temporary generate cards 
+
 public class TestCard extends TestCase {
 	
 	
