@@ -4,7 +4,9 @@ public class Card implements Comparable<Card>{
 	private String  name;
 	public Rank rank;
 	public Suit suit;
-		
+	
+	public Card() {}
+	
 	public Card(String n) {
 		name  = n;
 	}
@@ -74,9 +76,13 @@ public class Card implements Comparable<Card>{
 	}
 
 	@Override
-	public int compareTo(Card arg0) {
+	public int compareTo(Card card) {
 		// TODO Auto-generated method stub
-		return 0;
+		Rank cRank = ((Card) card).rank;
+		return cRank.getRank() - this.rank.getRank();
+	}
+	public String toString() {
+		return name;
 	}
 }
 
