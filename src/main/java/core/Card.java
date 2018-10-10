@@ -13,7 +13,7 @@ public class Card implements Comparable<Card>{
 		return name;
 	}
 	
-	// could be enum but switch keeps in same class -- cleaner
+	// create enum in separate class
 	public Suit makeSuit(String str) {
 		switch(str) {
 		case "Spades":
@@ -29,7 +29,7 @@ public class Card implements Comparable<Card>{
 		}
 	}
 	
-	// could use enum in separate file but this more clean
+	// create enum in separate class 
 	public Rank makeRank(String str) {
 		switch(str) {
 		case "Two":
@@ -61,6 +61,22 @@ public class Card implements Comparable<Card>{
 		default:
 			return null;
 		}
+	}
+	
+	public boolean convertCard(String card) {
+		String[] parse = card.split("(?=\\p{Upper})");
+		Rank r = makeRank(parse[0]);
+		Suit s = makeSuit(parse[1]);
+		this.name = card;
+		this.rank = r;
+		this.suit = s;
+		return true;
+	}
+
+	@Override
+	public int compareTo(Card arg0) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 }
 
