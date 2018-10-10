@@ -25,4 +25,9 @@ public class TestCard extends TestCase {
 		assertEquals(r, Rank.EIGHT);
 	}
 	
+	public void testConvertCard() {
+		Card c = new Card();
+		boolean converted = c.convertCard("ThreeDiamonds");
+		assertEquals(converted, true);
+	}
 }
