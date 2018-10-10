@@ -15,7 +15,7 @@ public class TestCard extends TestCase {
 	
 	public void testSuit() {
 		Card c = new Card();
-		Suit s = c.Suit("Spades");
+		Suit s = c.makeSuit("Spades");
 		assertEquals(s, Suit.SPADES);
 	}
 	
