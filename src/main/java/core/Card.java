@@ -18,13 +18,13 @@ public class Card implements Comparable<Card>{
 	// create enum in separate class
 	public Suit makeSuit(String str) {
 		switch(str) {
-		case "Spades":
+		case "S":
 			return Suit.SPADES;
-		case "Clubs":
+		case "C":
 			return Suit.CLUBS;
-		case "Hearts":
+		case "H":
 			return Suit.HEARTS;
-		case "Diamonds":
+		case "D":
 			return Suit.DIAMONDS;
 		default:
 			return null;
@@ -34,31 +34,31 @@ public class Card implements Comparable<Card>{
 	// create enum in separate class 
 	public Rank makeRank(String str) {
 		switch(str) {
-		case "Two":
+		case "2":
 			return Rank.TWO;
-		case "Three":
+		case "3":
 			return Rank.THREE;
-		case "Four":
+		case "4":
 			return Rank.FOUR;
-		case "Five":
+		case "5":
 			return Rank.FIVE;
-		case "Six":
+		case "6":
 			return Rank.SIX;
-		case "Seven":
+		case "7":
 			return Rank.SEVEN;
-		case "Eight":
+		case "8":
 			return Rank.EIGHT;
-		case "Nine":
+		case "9":
 			return Rank.NINE;
-		case "Ten":
+		case "10":
 			return Rank.TEN;
-		case "Jack":
+		case "J":
 			return Rank.JACK;
-		case "Queen":
+		case "Q":
 			return Rank.QUEEN;
-		case "King":
+		case "K":
 			return Rank.KING;
-		case "Ace":
+		case "A":
 			return Rank.ACE;
 		default:
 			return null;

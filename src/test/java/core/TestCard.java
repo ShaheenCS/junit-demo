@@ -19,13 +19,13 @@ public class TestCard extends TestCase {
 	
 	public void testSuit() {
 		Card c = new Card();
-		Suit s = c.makeSuit("Spades");
+		Suit s = c.makeSuit("S");
 		assertEquals(s, Suit.SPADES);
 	}
 	
 	public void testRank() {
 		Card c = new Card();
-		Rank r = c.makeRank("Eight");
+		Rank r = c.makeRank("8");
 		assertEquals(r, Rank.EIGHT);
 	}
 	
