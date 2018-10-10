@@ -31,4 +31,10 @@ public class Deck {
 	public int getDeckSize() {
 		return myDeck.size();
 	}
+	public Card draw() {
+		if(getDeckSize() == 0){
+			throw new IllegalArgumentException("The deck is currently empty!");
+		}
+		return myDeck.remove(0);
+	}
 }
